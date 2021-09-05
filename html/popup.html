@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>N Copy</title>
+    <link href="/css/bootstrap.min.css"  rel="stylesheet"/>
+    <style>
+        body{
+            min-width: 500px;
+            max-width: 500px;
+        }
+        .delete{
+            background-color: rgb(247, 40, 40);
+            color: white;
+        }
+
+        a{
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border-bottom: 1px solid #00796b;
+        }
+        a:hover{
+            color: goldenrod;
+        }
+
+        .head{
+            background-color:#00796b;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .success{
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/popup.css">
+</head>
+<body>
+    <div class="head">
+        N-Copy
+        <h6>Discord alerts</h6>
+    </div>
+    <div class="container first">
+        <div class="info">
+            <ul>
+                <li>Click here to invite bot to your server <a target="_blank" href="https://link.nithins.me/napi">Invite</a></li>
+                <li>Enter the discord channel ID</li>
+            </ul>
+        </div>
+        <form autocomplete="on">
+            <div class="form-group">
+                <label for="channel">Channel ID</label>
+                <input type="text" class="form-control" id="channel" placeholder="Enter the channel ID">
+            </div>
+        </form>
+        <button type="button" class="btn btn-primary btn-lg btn-block m-10 update">
+            Update
+        </button><br>
+        <div class="conatiner prevTimetable"></div>
+        <hr>
+    </div>
+    <div class="container success">
+        <div class="alert alert-success" role="alert">
+            Update Successful
+      </div>
+    </div>
+    <h6 style="text-align: end;font-size: small;"><a href="mailto:nithin.s491@gmail.com" target="_blank">Report bugs here</a></h6>
+</body>
+<script src="/js/popup.js"></script>
+</html>
